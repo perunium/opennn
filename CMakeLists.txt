@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 2.8.12)
+cmake_minimum_required(VERSION 3.14)
 
 project(opennn)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 set(CPACK_GENERATOR "TGZ")
 
 set(CMAKE_SUPPRESS_REGENERATION true)
@@ -43,5 +43,7 @@ endif(OpenNN_BUILD_BLANK)
 if(OpenNN_BUILD_TESTS)
     add_subdirectory(tests)
 endif(OpenNN_BUILD_TESTS)
+
+include(GNUInstallDirs)
 
 include(CPack)

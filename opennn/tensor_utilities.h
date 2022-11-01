@@ -18,7 +18,7 @@
 #include "config.h"
 #include "opennn_strings.h"
 
-#include "../eigen/Eigen/Dense"
+#include <eigen3/Eigen/Dense>
 
 
 namespace opennn
